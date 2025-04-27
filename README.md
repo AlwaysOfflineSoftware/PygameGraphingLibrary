@@ -1,4 +1,4 @@
-# PygameGraphingLibrary
+# Pygame Graphing Library
 A simple to use graphing library for Pygame_ce, using pure Pygame_ce and Python!
 
 **Library Functions**
