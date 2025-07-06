@@ -13,7 +13,8 @@ A simple to use graphing library for Pygame_ce, using pure Pygame_ce and Python!
 * **Demo Charts**: Creates a demo to showcase all charts, providing a comprehensive example of each chart type. Example below.
 
 
-![image](https://github.com/user-attachments/assets/c35fb755-02ec-42bf-b795-ac58ee05e5fa)
+![image](https://github.com/user-attachments/assets/6bd69180-a189-4c67-bc45-3baad383f0b9)
+
 
 
 **To Do:**
