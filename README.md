@@ -20,8 +20,6 @@ A simple to use graphing library for Pygame_ce, using pure Pygame_ce and Python!
 **To Do:**
 =====================
 
-* Add title options to all charts
-
-* Add legends options to all charts
-
 * Add value display on hover options to all charts
+
+* Add labels for line and plot chart value increments
