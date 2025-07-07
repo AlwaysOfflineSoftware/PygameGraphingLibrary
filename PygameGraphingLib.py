@@ -1,15 +1,4 @@
-# Example file showing a circle moving on screen
-import datetime
-import random
 import pygame
-
-# pygame setup
-pygame.init()
-screen = pygame.display.set_mode((1280, 720))
-clock = pygame.time.Clock()
-running = True
-dt = 0
-
 
 class PygameGraph:
     screen = None
@@ -345,37 +334,3 @@ class PygameGraph:
             ]
             self.DrawLineChart(lineExample, "xLabels", "ylabels", "white")
 
-
-###############################################################################################################
-chart1 = PygameGraph(screen, 100, 100, 250, 250)
-chart2 = PygameGraph(screen, 600, 100, 250, 250)
-chart3 = PygameGraph(screen, 820, 440, 250, 250)
-chart4 = PygameGraph(screen, 100, 400, 250, 250)
-chart5 = PygameGraph(screen, 475, 400, 250, 250)
-chart6 = PygameGraph(screen, 400, 400, 250, 250)
-
-while running:
-    # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-
-    screen.fill("black")
-    chart1.DemoCharts("line")
-    chart1.AddTitle("TEST TITLE", size=35)
-    chart1.AddLegend(chart1.pickColor, chart1.labelarr, "right", size=35)
-    chart2.DemoCharts("vbar")
-    chart3.DemoCharts("pie")
-    chart3.AddTitle("TEST TITLE", size=35)
-    chart3.AddLegend(chart1.pickColor, chart1.labelarr, "right", size=35)
-    chart4.DemoCharts("scatter")
-    chart5.DemoCharts("hprogress")
-    chart6.DemoCharts("vprogress")
-    pygame.display.flip()
-
-    # limits FPS to 60
-    # dt is delta time in seconds since last frame, used for framerate-independent physics.
-    dt = clock.tick(60) / 1000
-
-pygame.quit()
